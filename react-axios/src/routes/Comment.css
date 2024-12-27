@@ -1,0 +1,11 @@
+.liComment {
+    border-bottom: 1px solid;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.liComment h1::first-letter {
+    text-transform: uppercase;
+}

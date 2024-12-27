@@ -1,0 +1,19 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Blinker";
+}
+
+body {
+  background-color: #282A36;
+  color: #5F6F9F;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}

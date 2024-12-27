@@ -13,7 +13,7 @@ const NavBar = () => {
                 <Link to={"/"}>Home</Link>
             </li>
             <li>
-                <Link to={"/add"}>Add Comment</Link>
+                <Link to={"/add"} className="btn-add">Add Comment</Link>
             </li>
         </ul>
     </nav>

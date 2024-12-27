@@ -21,6 +21,9 @@ const router = createBrowserRouter([
       {
         path: "/add",
         element: <AddComment />
+      },
+      {
+        path:"/comment/:id"
       }
     ]
   }
