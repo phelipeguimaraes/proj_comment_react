@@ -9,6 +9,8 @@ import Comment from './routes/Comment.jsx'
 
 import {createBrowserRouter, RouterProvider, Route} from "react-router-dom"
 import UserComment from './routes/UserComment.jsx'
+import Admin from './routes/Admin.jsx'
+import Edit from './routes/Edit.jsx'
 
 
 const router = createBrowserRouter([
@@ -26,6 +28,14 @@ const router = createBrowserRouter([
       {
         path:"/comment/:id",
         element: <UserComment />
+      },
+      {
+        path: "/admin",
+        element: <Admin />
+      },
+      {
+        path: "/edit/:id",
+        element: <Edit />
       }
     ]
   }

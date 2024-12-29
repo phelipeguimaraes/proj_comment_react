@@ -15,6 +15,9 @@ const NavBar = () => {
             <li>
                 <Link to={"/add"} className="btn-add">Add Comment</Link>
             </li>
+            <li>
+                <Link to={"/admin"}>Gerenciar</Link>
+            </li>
         </ul>
     </nav>
   )

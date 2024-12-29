@@ -1,0 +1,30 @@
+.admin-box {
+    padding: 1.5rem 1.5rem;
+    border-bottom: 1px solid;
+}
+
+.admin-box button, .edit-btn {
+    padding: .5rem 1.5rem;
+    margin-top: 15px;
+    border: none;
+    border-radius: 1rem;
+    opacity: .9;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.admin-box button:hover, .edit-btn:hover {
+    opacity: 1;
+}
+
+.edit-btn {
+    background-color: #1BBFDA;
+    color: #fff;
+}
+
+.delete-btn {
+    background-color: #EB1818;
+    color: #fff;
+    margin-left: 10px;
+}
+
