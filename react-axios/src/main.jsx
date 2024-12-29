@@ -8,6 +8,7 @@ import AddComment from './routes/AddComment.jsx'
 import Comment from './routes/Comment.jsx'
 
 import {createBrowserRouter, RouterProvider, Route} from "react-router-dom"
+import UserComment from './routes/UserComment.jsx'
 
 
 const router = createBrowserRouter([
@@ -23,7 +24,8 @@ const router = createBrowserRouter([
         element: <AddComment />
       },
       {
-        path:"/comment/:id"
+        path:"/comment/:id",
+        element: <UserComment />
       }
     ]
   }

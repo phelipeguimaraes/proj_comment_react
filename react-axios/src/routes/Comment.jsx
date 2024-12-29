@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import axios from 'axios'
+import commentFetch from "../axios/config"
 import { Link } from "react-router-dom"
 
 import './Comment.css'
@@ -11,11 +11,11 @@ const Comment = () => {
   const getComment = async() => {
     try {
 
-      const response = await axios.get("https://jsonplaceholder.typicode.com/comments")
+      const response = await commentFetch.get("/comments")
 
       const data = response.data
 
-      console.log(data)
+      console.log(response.data)
 
       setComments(data)
 
@@ -31,7 +31,7 @@ const Comment = () => {
   return (
     <>
    <ul>
-    {!comments == 0 ? (<p>Carregando...</p>) : (comments.map(comment => (
+    {comments.length === 0 ? (<p>Carregando...</p>) : (comments.map(comment => (
       <li key={comment.id} className="liComment">
           <h1>{comment.name}</h1>
           <h2>{comment.email}</h2>

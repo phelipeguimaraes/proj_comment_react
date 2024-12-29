@@ -29,15 +29,14 @@ h1 {
     border-radius: 5px;
     padding: .5rem 1rem;
     outline: none;
-    text-align: center;
+    
 }
 
 .form-control textarea {
     padding: .5rem 1rem;
     border-radius: 5px;
     border: none;
-    text-align: center;
-    outline: none;
+     outline: none;
 }
 
 .btn-submit {

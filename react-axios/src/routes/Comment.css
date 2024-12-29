@@ -9,3 +9,9 @@
 .liComment h1::first-letter {
     text-transform: uppercase;
 }
+
+p {
+    color: #fff;
+    font-size: 17px;
+    font-weight: bold;
+}
