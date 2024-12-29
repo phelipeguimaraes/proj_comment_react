@@ -1,7 +1,5 @@
 import { useState, useEffect } from "react"
 import axios from 'axios'
-import { use } from "react"
-import { data } from "react-router-dom"
 import { Link } from "react-router-dom"
 
 import './Comment.css'
@@ -33,7 +31,7 @@ const Comment = () => {
   return (
     <>
    <ul>
-    {!comments ? (<p>Carregando...</p>) : (comments.map(comment => (
+    {!comments == 0 ? (<p>Carregando...</p>) : (comments.map(comment => (
       <li key={comment.id} className="liComment">
           <h1>{comment.name}</h1>
           <h2>{comment.email}</h2>
