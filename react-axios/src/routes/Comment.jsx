@@ -15,8 +15,6 @@ const Comment = () => {
 
       const data = response.data
 
-      console.log(response.data)
-
       setComments(data)
 
     } catch(error) {
