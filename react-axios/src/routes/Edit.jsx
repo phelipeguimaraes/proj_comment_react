@@ -14,8 +14,6 @@ const Edit = () => {
 
   const {id} = useParams()
 
-  const [comments, setComments] = useState([])
-
   const getComments = async() => {
 
       try {
